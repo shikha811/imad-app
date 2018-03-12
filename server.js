@@ -5,6 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var content= {
+    title:'Article -one|shikha',
+    heading:'Article-one',
+    date: '8 nov 2018'
+    
+}; 
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
