@@ -18,6 +18,8 @@ button.onclick=function(){
             }
         }
     }
-    //render the variable in the correct span
+    //make the request
+    request.open('GET','http://gshikha811sg.imad.hasura-app.io',true);
+    rquest.send(null);
     
 };
