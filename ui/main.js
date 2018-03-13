@@ -1,16 +1,23 @@
 //counter code
 var button= document.getElementById('counter');
-var counter=0;
+
 
 button.onclick=function(){
     
     
     //make a request to the counter endpoint
+    var request=new XMLhttprequest();
     
     //capture the response and store it in a variable
-    
+    request.onreadystatechange=function(){
+        if(request.readyState---XMLHttprequest.XML)
+        {
+            if(request.status===200)
+            {
+                var ciounter=request.responseText;
+            }
+        }
+    }
     //render the variable in the correct span
-    counter=counter+1;
-    var span=document.getElementById('count');
-span.innerHTML=counter.toString();
-}
+    
+};
